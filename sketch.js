@@ -180,7 +180,7 @@ function updateLUT() {
 
   // LOCATE START OF LUT VALUES
   for (i = 0; i < lutText.length; i++) {
-    let rtest = lutText[i].match(/[01]\.?\d*\s[01]\.?\d*\s[01]\.?\d*/);
+    let rtest = lutText[i].match(/^[01]\.?\d*\s[01]\.?\d*\s[01]\.?\d*/);
     if (rtest != null) {
       lutStart = i;
       break;
